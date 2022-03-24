@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test8.html</title>
+    <style>
+        h2 {background-color: yellowgreen;}
+        div {
+            background-color: violet;
+            color: white;}
+        span {background-color: brown;}
+        #cont2 {
+            background-color: blue;
+            font-size: 20px;
+            color: black;
+        }
+        .cont2 {
+            background-color: aqua;
+            font-size: 20px;
+            color: black;
+        }
+        .cont22 {
+            background-color: red;
+            font-size: 10px;
+            color: #fff;
+        }
+</style>
+</head>
+<body>
+    <h2>선택자(selector) 혼합응용연습</h2>
+    <p>
+        -선택자 이름은 여러개 가질수있다
+        -클래스명과 아이디명을 동시에 가질수있다
+        -클래스명은 하나의 태그안에 여러개를 가질수있다
+        -같은 클래스명이 중복 선언됬을때, 나중 선언된 것이 적용됨
+    </p>
+    <p>태그연습1</p>
+    <div>1.이곳은 div태그 영역입니다
+        선택자 id는 class보다 우선 적용됨
+    </div>
+    <!--<div style="background-color: red">2.이곳은 div태그 영역입니다</div>-->
+    <div id="cont2" class="cont2 cont22">3.이곳은 div태그 영역입니다</div>
+    11.이곳은 일반영역입니다<br/>
+    12.이곳은 일반영역입니다<br/>
+    <span>21.이곳은 span태그 영역(br줄바꿈없으면 아래 모든글자를 한문장으로 연결출력)입니다</span>
+    <span class="cont22">22.이곳은 span태그 영역입니다</span>
+    <span class="cont22">23.이곳은 span태그 영역입니다</span>
+    13.이곳은 일반영역입니다<br/>
+    <p>태그연습2</p>
+</body>
+</html>
