@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test1.html</title>
+    <style>
+        table {
+            background-color:thistle;
+            width: 800px;
+            height: 300px;
+            border: 1px solid #ccc;
+            border-collapse: collapse; /*안쪽여백 삭제(padding삭제)*/
+        }
+        table, th, td {
+            margin: 0px;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        #tr1, #tr2, #tr3, #tr4, #tr5 {
+            text-align: right;
+        }
+        #tr1 { background: linear-gradient(to right, red, blue); }
+        #tr2 { background: linear-gradient(to left, red, blue); }
+        #tr3 { background: linear-gradient(to bottom, red, blue); }
+        #tr4 { background: linear-gradient(to top, red, blue); }
+        #tr5, #layer5 { background: radial-gradient(orange, yellow); }
+        #layer5 {
+            background: radial-gradient(orange 30%, grey, yellow 30%); 
+            width: 400px;
+            height: 400px;
+        }
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+        </tr>
+        <tr id="tr1">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr id="tr2">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr id="tr3">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr id="tr4">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr id="tr5">
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <hr/>
+    <div id="layer5"></div>
+</body>
+</html>
