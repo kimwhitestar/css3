@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test3.html</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        #img1, #img2, #img3, #img4, #img5 {
+            width: 100px;
+            height: 20px;
+            padding: 6px 0px; /*위아래 좌우*/
+            background-color: teal;
+            color: white;
+            text-align: center;
+            position:absolute; /*1. img1~img5모두 하나의 absolute 위치로 덮어씌어 배치*/
+            top: 0px;
+        }
+        #img1 {
+            text-align: right;
+            left: 0px;
+        }
+        #img2 {
+            text-align: right;
+            left: 200px; /*2. 다시 배치위치를 옆으로 널어 배치*/
+        }
+        #img3 {
+            text-align: right;
+            left: 400px; /*2. 다시 배치위치를 옆으로 널어 배치*/
+        }
+        #img4 {
+            text-align: right;
+            left: 600px; /*2. 다시 배치위치를 옆으로 널어 배치*/
+        }
+        #img5 {
+            text-align: right;
+            left: 800px; /*2. 다시 배치위치를 옆으로 널어 배치*/
+        }
+        #img1:hover, #img2:hover, #img3:hover, #img4:hover, #img5:hover {
+            width: 150px;
+            height: 100px;
+        }
+        #img1:hover {background-color: lightgrey;}
+        #img2:hover {background-color: mediumpurple;}
+        #img3:hover {background-color: mintcream;}
+        #img4:hover {background-color: cornsilk;}
+        #img5:hover {background-color: orange;}
+    </style>
+</head>
+<body>
+    <div id="img1">그림1</div>
+    <div id="img2">그림2</div>
+    <div id="img3">그림3</div>
+    <div id="img4">그림4</div>
+    <div id="img5">그림5</div>
+</body>
+</html>
