@@ -6,13 +6,38 @@
     <title>test9.html</title>
     <style>
         div {margin: 20px;}
+        #pContent {
+            visibility: default;
+        }
         .aaa2 {display: none;}
+        .aaa5, .aaa6, .aaa7 {width: 400px; border:2px solid gray}
+        .sss1 {
+            display: block; /*줄바꾸며 영역확보*/
+            width: 100px;
+            border: 1px solid blue;
+            margin: 50px;
+            padding: 10px;
+        }
+        .sss2 {
+            display: inline; /*block과는 다르게 현재위치 위에 영역 덮어 표시*/
+            width: 100px;
+            border: 1px solid green;
+            margin: 50px;
+            padding: 10px;
+        }
+        .sss3 {
+            display: inline-block; /*줄바꿈없이 옆으로 영역 확보 표시*/
+            width: 100px;
+            border: 1px solid purple;
+            margin: 50px;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
     <h2>Display 속성</h2>
     <p>Display속성은 각각의 요소를 어떻게 보여줄지 결정</p>
-    <p>속성처리값? visibility(표시-기본값) hidden(숨김)</p>
+    <p id="pContent">속성처리값? visibility: default(표시-기본값) hidden(영역확보상태에서 숨김)</p>
     <p>
         none: 보여주지 않을때..<br/>
         inline: 인라인상태(자신의 고유영역만 확보)-단어의미로 해석<br/>
@@ -29,6 +54,16 @@
     <h2>Block속성</h2>
     <div class="aaa5">5.Block입니다
         <span class="sss1"><font color="blue">안녕하세요</font></span>
+    </div>
+    <hr/>
+    <h2>InLine속성</h2>
+    <div class="aaa6">6.InLine Block입니다
+        <span class="sss2"><font color="red">안녕하세요</font></span>
+    </div>
+    <hr/>
+    <h2>속성</h2>
+    <div class="aaa7">7.Block입니다
+        <span class="sss3"><font color="yellow">안녕하세요</font></span>
     </div>
 </body>
 </html>

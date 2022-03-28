@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test10.html</title>
+    <style>
+        body, ul, li {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        a {
+            color: inherit; /*바로 앞 태그표시된 글자색을 상속*/
+            text-decoration: inherit;
+        }
+        .menu {
+            text-align: center;
+        }
+        .menu > ul {
+            background-color: grey;
+            display: inline-block;
+            padding: 0px 10px;
+            border-radius: 5px;
+        }
+        .menu > ul > li {
+            display: inline-block;
+            padding: 10px;
+        }
+        .menu > ul > li > a {
+            background-color: yellow;
+            color: white;
+            display: inline-block;
+            /* padding: 10px; */
+        }
+        .menu > ul > li:hover {
+            background-color: black;
+            color: #000;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#">주메뉴1</a></li>
+            <li><a href="#">주메뉴2</a></li>
+            <li><a href="#">주메뉴3</a></li>
+            <li><a href="#">주메뉴4</a></li>
+        </ul>
+    </nav>
+    <h2>Fulldown메뉴</h2>
+</body>
+</html>
