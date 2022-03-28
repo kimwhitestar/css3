@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test8.html</title>
+    <style>
+        #imgParent {
+            position: relative; /*앞 태그를 기준으로 이어서 연속 표시*/
+            left: 300px;
+            top: 200px;
+            width: 500px;
+        }
+        #sign {
+            /* position: inherit; 이 전의 상황을 상속 */
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>그림안에 이니셜 배치</h2>
+    <div id="imgParent">
+        <img src="../../images/몰라.jpg" width="500px"/>
+        <div id="sign">Design by Kim</div>
+    </div>
+</body>
+</html>
